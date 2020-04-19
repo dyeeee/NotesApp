@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E7CF633C2B5EDA8F405F1C /* Pods_MyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476626CBDE5D0E26DD1A1C16 /* Pods_MyNotes.framework */; };
+		D00794AD242F299C00D66ACE /* NoteEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00794AC242F299C00D66ACE /* NoteEditView.swift */; };
 		D00C5C372424614D004591F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C5C362424614D004591F5 /* AppDelegate.swift */; };
 		D00C5C392424614D004591F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C5C382424614D004591F5 /* SceneDelegate.swift */; };
 		D00C5C3C2424614D004591F5 /* MyNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D00C5C3A2424614D004591F5 /* MyNotes.xcdatamodeld */; };
@@ -14,10 +16,52 @@
 		D00C5C402424614E004591F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00C5C3F2424614E004591F5 /* Assets.xcassets */; };
 		D00C5C432424614E004591F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00C5C422424614E004591F5 /* Preview Assets.xcassets */; };
 		D00C5C462424614E004591F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00C5C442424614E004591F5 /* LaunchScreen.storyboard */; };
+		D01C7EFD242466A300214DD2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C7EFC242466A300214DD2 /* TabBarView.swift */; };
+		D01C7F092424A15300214DD2 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C7F082424A15300214DD2 /* CardsView.swift */; };
+		D01C7F0B2424A1A600214DD2 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C7F0A2424A1A600214DD2 /* RingView.swift */; };
+		D01C7F0D2424A1B500214DD2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C7F0C2424A1B500214DD2 /* BlurView.swift */; };
+		D01C7F122424F3D500214DD2 /* NotesListView_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C7F112424F3D500214DD2 /* NotesListView_old.swift */; };
+		D01C7F142424F72D00214DD2 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C7F132424F72D00214DD2 /* CourseList.swift */; };
+		D02D2594242B0EF400F1CD81 /* NoteAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D2593242B0EF400F1CD81 /* NoteAddView.swift */; };
+		D02D2596242B8E8000F1CD81 /* NotesCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D2595242B8E8000F1CD81 /* NotesCardListView.swift */; };
+		D02D2598242B957900F1CD81 /* NoteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D2597242B957900F1CD81 /* NoteCardView.swift */; };
+		D0387FB8242A493900065BF9 /* NoteItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0387FB6242A493900065BF9 /* NoteItem+CoreDataClass.swift */; };
+		D0387FB9242A493900065BF9 /* NoteItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0387FB7242A493900065BF9 /* NoteItem+CoreDataProperties.swift */; };
+		D0387FBB242A496B00065BF9 /* NoteItem+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0387FBA242A496B00065BF9 /* NoteItem+Convenience.swift */; };
+		D0387FBD242A4B5700065BF9 /* NoteItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0387FBC242A4B5700065BF9 /* NoteItemController.swift */; };
+		D03BAB21244B003E00570087 /* ContentfulRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03BAB20244B003E00570087 /* ContentfulRegisterView.swift */; };
+		D051DD752445E5A2001FCEFB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051DD742445E5A2001FCEFB /* HomeView.swift */; };
+		D051DD772446007B001FCEFB /* MincloudTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051DD762446007B001FCEFB /* MincloudTools.swift */; };
+		D051DD79244600F7001FCEFB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051DD78244600F7001FCEFB /* LoginView.swift */; };
+		D051DD7B24460122001FCEFB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051DD7A24460122001FCEFB /* RegisterView.swift */; };
+		D06E622B2446F45E0096CD97 /* ContentfulLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E622A2446F45E0096CD97 /* ContentfulLoginView.swift */; };
+		D0B8ADFB2425C7EA0056FE8E /* multiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8ADFA2425C7EA0056FE8E /* multiLineTextField.swift */; };
+		D0B8ADFD2425E5B80056FE8E /* NotesTextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8ADFC2425E5B80056FE8E /* NotesTextListView.swift */; };
+		D0B8AE012425EF700056FE8E /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8AE002425EF700056FE8E /* NoteDetailView.swift */; };
+		D0B8AE032425F0C60056FE8E /* NotesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8AE022425F0C60056FE8E /* NotesStore.swift */; };
+		D0B8AE05242602BE0056FE8E /* selectableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8AE04242602BE0056FE8E /* selectableText.swift */; };
+		D0BC5C9024487D2D002BB8E4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D0BC5C8F24487D2D002BB8E4 /* Lottie */; };
+		D0BC5C9324487E41002BB8E4 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC5C9224487E41002BB8E4 /* LottieView.swift */; };
+		D0BC5C9624487E7A002BB8E4 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = D0BC5C9424487E7A002BB8E4 /* success.json */; };
+		D0BC5C9724487E7A002BB8E4 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = D0BC5C9524487E7A002BB8E4 /* loading.json */; };
+		D0BC5C9924487E91002BB8E4 /* LottieTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC5C9824487E91002BB8E4 /* LottieTestView.swift */; };
+		D0BC5C9B24488783002BB8E4 /* bots-channel.json in Resources */ = {isa = PBXBuildFile; fileRef = D0BC5C9A24488782002BB8E4 /* bots-channel.json */; };
+		D0BC5C9D24488875002BB8E4 /* card-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = D0BC5C9C24488875002BB8E4 /* card-loading.json */; };
+		D0BFE137242F92B400B78034 /* TimerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFE136242F92B400B78034 /* TimerHomeView.swift */; };
+		D0BFE139242F92DC00B78034 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFE138242F92DC00B78034 /* TimerController.swift */; };
+		D0CA843C242E2DB20063322D /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA843A242E2DB20063322D /* ToDoItem+CoreDataClass.swift */; };
+		D0CA843D242E2DB20063322D /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA843B242E2DB20063322D /* ToDoItem+CoreDataProperties.swift */; };
+		D0CA843F242E2E770063322D /* ToDoItem+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA843E242E2E770063322D /* ToDoItem+Convenience.swift */; };
+		D0CA8441242E2EE60063322D /* ToDoItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA8440242E2EE60063322D /* ToDoItemController.swift */; };
+		D0CA8443242E30390063322D /* ToDoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA8442242E30390063322D /* ToDoRowView.swift */; };
+		D0CA8445242E30F90063322D /* ToDosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA8444242E30F90063322D /* ToDosListView.swift */; };
+		D0F8A189242C4CD800DDF48E /* NoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F8A188242C4CD800DDF48E /* NoteRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D00C5C332424614D004591F5 /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		476626CBDE5D0E26DD1A1C16 /* Pods_MyNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00794AC242F299C00D66ACE /* NoteEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditView.swift; sourceTree = "<group>"; };
+		D00C5C332424614D004591F5 /* YesNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00C5C362424614D004591F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D00C5C382424614D004591F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D00C5C3B2424614D004591F5 /* MyNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyNotes.xcdatamodel; sourceTree = "<group>"; };
@@ -26,6 +70,47 @@
 		D00C5C422424614E004591F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D00C5C452424614E004591F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D00C5C472424614E004591F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01C7EFC242466A300214DD2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D01C7F082424A15300214DD2 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		D01C7F0A2424A1A600214DD2 /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		D01C7F0C2424A1B500214DD2 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		D01C7F112424F3D500214DD2 /* NotesListView_old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView_old.swift; sourceTree = "<group>"; };
+		D01C7F132424F72D00214DD2 /* CourseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		D02D2593242B0EF400F1CD81 /* NoteAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAddView.swift; sourceTree = "<group>"; };
+		D02D2595242B8E8000F1CD81 /* NotesCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCardListView.swift; sourceTree = "<group>"; };
+		D02D2597242B957900F1CD81 /* NoteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCardView.swift; sourceTree = "<group>"; };
+		D0387FB6242A493900065BF9 /* NoteItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D0387FB7242A493900065BF9 /* NoteItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0387FBA242A496B00065BF9 /* NoteItem+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteItem+Convenience.swift"; sourceTree = "<group>"; };
+		D0387FBC242A4B5700065BF9 /* NoteItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItemController.swift; sourceTree = "<group>"; };
+		D03BAB20244B003E00570087 /* ContentfulRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulRegisterView.swift; sourceTree = "<group>"; };
+		D051DD742445E5A2001FCEFB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D051DD762446007B001FCEFB /* MincloudTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MincloudTools.swift; sourceTree = "<group>"; };
+		D051DD78244600F7001FCEFB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D051DD7A24460122001FCEFB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D06E622A2446F45E0096CD97 /* ContentfulLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulLoginView.swift; sourceTree = "<group>"; };
+		D0B8ADFA2425C7EA0056FE8E /* multiLineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = multiLineTextField.swift; sourceTree = "<group>"; };
+		D0B8ADFC2425E5B80056FE8E /* NotesTextListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTextListView.swift; sourceTree = "<group>"; };
+		D0B8AE002425EF700056FE8E /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		D0B8AE022425F0C60056FE8E /* NotesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesStore.swift; sourceTree = "<group>"; };
+		D0B8AE04242602BE0056FE8E /* selectableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectableText.swift; sourceTree = "<group>"; };
+		D0BC5C9224487E41002BB8E4 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		D0BC5C9424487E7A002BB8E4 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		D0BC5C9524487E7A002BB8E4 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		D0BC5C9824487E91002BB8E4 /* LottieTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTestView.swift; sourceTree = "<group>"; };
+		D0BC5C9A24488782002BB8E4 /* bots-channel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bots-channel.json"; sourceTree = "<group>"; };
+		D0BC5C9C24488875002BB8E4 /* card-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "card-loading.json"; sourceTree = "<group>"; };
+		D0BFE136242F92B400B78034 /* TimerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerHomeView.swift; sourceTree = "<group>"; };
+		D0BFE138242F92DC00B78034 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		D0CA843A242E2DB20063322D /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D0CA843B242E2DB20063322D /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0CA843E242E2E770063322D /* ToDoItem+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+Convenience.swift"; sourceTree = "<group>"; };
+		D0CA8440242E2EE60063322D /* ToDoItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemController.swift; sourceTree = "<group>"; };
+		D0CA8442242E30390063322D /* ToDoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRowView.swift; sourceTree = "<group>"; };
+		D0CA8444242E30F90063322D /* ToDosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosListView.swift; sourceTree = "<group>"; };
+		D0F8A188242C4CD800DDF48E /* NoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRowView.swift; sourceTree = "<group>"; };
+		DDFDA7107BCE1D1235B11581 /* Pods-MyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.release.xcconfig"; path = "Target Support Files/Pods-MyNotes/Pods-MyNotes.release.xcconfig"; sourceTree = "<group>"; };
+		FD736D6EEAF246B5A2959334 /* Pods-MyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.debug.xcconfig"; path = "Target Support Files/Pods-MyNotes/Pods-MyNotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,24 +118,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E7CF633C2B5EDA8F405F1C /* Pods_MyNotes.framework in Frameworks */,
+				D0BC5C9024487D2D002BB8E4 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		592CAB2107B697D04B58BA25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				476626CBDE5D0E26DD1A1C16 /* Pods_MyNotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D00C5C2A2424614D004591F5 = {
 			isa = PBXGroup;
 			children = (
 				D00C5C352424614D004591F5 /* MyNotes */,
 				D00C5C342424614D004591F5 /* Products */,
+				F0690B3EF35D599962F06319 /* Pods */,
+				592CAB2107B697D04B58BA25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D00C5C342424614D004591F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D00C5C332424614D004591F5 /* MyNotes.app */,
+				D00C5C332424614D004591F5 /* YesNotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +155,24 @@
 		D00C5C352424614D004591F5 /* MyNotes */ = {
 			isa = PBXGroup;
 			children = (
-				D00C5C362424614D004591F5 /* AppDelegate.swift */,
-				D00C5C382424614D004591F5 /* SceneDelegate.swift */,
+				D0B8AE04242602BE0056FE8E /* selectableText.swift */,
 				D00C5C3D2424614D004591F5 /* ContentView.swift */,
+				D0B8ADFA2425C7EA0056FE8E /* multiLineTextField.swift */,
+				D01C7F072424A14100214DD2 /* TestPages */,
+				D0BC5C9124487E27002BB8E4 /* Lottie */,
+				D00C5C52242464B1004591F5 /* Delegates */,
+				D051DD732445E583001FCEFB /* HomeView */,
+				D00C5C512424645C004591F5 /* TabView */,
+				D01C7EFE24246B2300214DD2 /* ToDos */,
+				D0CA8439242E2B750063322D /* ToDosDataModel */,
+				D01C7F0E2424F0D300214DD2 /* Notes */,
+				D0FD33B42427301E007F175E /* NotesDataModel */,
+				D0BFE135242F92A100B78034 /* Timer */,
+				D0706666244C7D5700035390 /* News */,
+				D0B8AE06242645940056FE8E /* DataModel */,
 				D00C5C3F2424614E004591F5 /* Assets.xcassets */,
 				D00C5C442424614E004591F5 /* LaunchScreen.storyboard */,
 				D00C5C472424614E004591F5 /* Info.plist */,
-				D00C5C3A2424614D004591F5 /* MyNotes.xcdatamodeld */,
 				D00C5C412424614E004591F5 /* Preview Content */,
 			);
 			path = MyNotes;
@@ -78,6 +186,140 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D00C5C512424645C004591F5 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				D01C7EFC242466A300214DD2 /* TabBarView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		D00C5C52242464B1004591F5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D00C5C362424614D004591F5 /* AppDelegate.swift */,
+				D00C5C382424614D004591F5 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D01C7EFE24246B2300214DD2 /* ToDos */ = {
+			isa = PBXGroup;
+			children = (
+				D0CA8444242E30F90063322D /* ToDosListView.swift */,
+				D0CA8442242E30390063322D /* ToDoRowView.swift */,
+			);
+			path = ToDos;
+			sourceTree = "<group>";
+		};
+		D01C7F072424A14100214DD2 /* TestPages */ = {
+			isa = PBXGroup;
+			children = (
+				D01C7F0C2424A1B500214DD2 /* BlurView.swift */,
+				D01C7F0A2424A1A600214DD2 /* RingView.swift */,
+				D01C7F082424A15300214DD2 /* CardsView.swift */,
+				D01C7F132424F72D00214DD2 /* CourseList.swift */,
+			);
+			path = TestPages;
+			sourceTree = "<group>";
+		};
+		D01C7F0E2424F0D300214DD2 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				D0B8ADFC2425E5B80056FE8E /* NotesTextListView.swift */,
+				D0F8A188242C4CD800DDF48E /* NoteRowView.swift */,
+				D0B8AE002425EF700056FE8E /* NoteDetailView.swift */,
+				D02D2593242B0EF400F1CD81 /* NoteAddView.swift */,
+				D00794AC242F299C00D66ACE /* NoteEditView.swift */,
+				D02D2595242B8E8000F1CD81 /* NotesCardListView.swift */,
+				D02D2597242B957900F1CD81 /* NoteCardView.swift */,
+				D0B8AE022425F0C60056FE8E /* NotesStore.swift */,
+				D01C7F112424F3D500214DD2 /* NotesListView_old.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		D051DD732445E583001FCEFB /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				D051DD762446007B001FCEFB /* MincloudTools.swift */,
+				D051DD742445E5A2001FCEFB /* HomeView.swift */,
+				D06E622A2446F45E0096CD97 /* ContentfulLoginView.swift */,
+				D03BAB20244B003E00570087 /* ContentfulRegisterView.swift */,
+				D051DD78244600F7001FCEFB /* LoginView.swift */,
+				D051DD7A24460122001FCEFB /* RegisterView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		D0706666244C7D5700035390 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D0B8AE06242645940056FE8E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D00C5C3A2424614D004591F5 /* MyNotes.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		D0BC5C9124487E27002BB8E4 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				D0BC5C9524487E7A002BB8E4 /* loading.json */,
+				D0BC5C9424487E7A002BB8E4 /* success.json */,
+				D0BC5C9C24488875002BB8E4 /* card-loading.json */,
+				D0BC5C9A24488782002BB8E4 /* bots-channel.json */,
+				D0BC5C9224487E41002BB8E4 /* LottieView.swift */,
+				D0BC5C9824487E91002BB8E4 /* LottieTestView.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		D0BFE135242F92A100B78034 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				D0BFE136242F92B400B78034 /* TimerHomeView.swift */,
+				D0BFE138242F92DC00B78034 /* TimerController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		D0CA8439242E2B750063322D /* ToDosDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0CA843A242E2DB20063322D /* ToDoItem+CoreDataClass.swift */,
+				D0CA843B242E2DB20063322D /* ToDoItem+CoreDataProperties.swift */,
+				D0CA843E242E2E770063322D /* ToDoItem+Convenience.swift */,
+				D0CA8440242E2EE60063322D /* ToDoItemController.swift */,
+			);
+			path = ToDosDataModel;
+			sourceTree = "<group>";
+		};
+		D0FD33B42427301E007F175E /* NotesDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0387FB6242A493900065BF9 /* NoteItem+CoreDataClass.swift */,
+				D0387FB7242A493900065BF9 /* NoteItem+CoreDataProperties.swift */,
+				D0387FBA242A496B00065BF9 /* NoteItem+Convenience.swift */,
+				D0387FBC242A4B5700065BF9 /* NoteItemController.swift */,
+			);
+			path = NotesDataModel;
+			sourceTree = "<group>";
+		};
+		F0690B3EF35D599962F06319 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD736D6EEAF246B5A2959334 /* Pods-MyNotes.debug.xcconfig */,
+				DDFDA7107BCE1D1235B11581 /* Pods-MyNotes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,17 +327,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D00C5C4A2424614E004591F5 /* Build configuration list for PBXNativeTarget "MyNotes" */;
 			buildPhases = (
+				C71BBA334F42E0B7B2D54CCD /* [CP] Check Pods Manifest.lock */,
 				D00C5C2F2424614D004591F5 /* Sources */,
 				D00C5C302424614D004591F5 /* Frameworks */,
 				D00C5C312424614D004591F5 /* Resources */,
+				C36821B54DE72093EA1AD290 /* [CP] Embed Pods Frameworks */,
+				1869EECADA1BD347E1DBF55C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MyNotes;
+			packageProductDependencies = (
+				D0BC5C8F24487D2D002BB8E4 /* Lottie */,
+			);
 			productName = MyNotes;
-			productReference = D00C5C332424614D004591F5 /* MyNotes.app */;
+			productReference = D00C5C332424614D004591F5 /* YesNotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,6 +370,9 @@
 				Base,
 			);
 			mainGroup = D00C5C2A2424614D004591F5;
+			packageReferences = (
+				D0BC5C8E24487D2D002BB8E4 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = D00C5C342424614D004591F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,22 +388,121 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00C5C462424614E004591F5 /* LaunchScreen.storyboard in Resources */,
+				D0BC5C9B24488783002BB8E4 /* bots-channel.json in Resources */,
+				D0BC5C9624487E7A002BB8E4 /* success.json in Resources */,
 				D00C5C432424614E004591F5 /* Preview Assets.xcassets in Resources */,
 				D00C5C402424614E004591F5 /* Assets.xcassets in Resources */,
+				D0BC5C9D24488875002BB8E4 /* card-loading.json in Resources */,
+				D0BC5C9724487E7A002BB8E4 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1869EECADA1BD347E1DBF55C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNotes/Pods-MyNotes-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNotes/Pods-MyNotes-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyNotes/Pods-MyNotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C36821B54DE72093EA1AD290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNotes/Pods-MyNotes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNotes/Pods-MyNotes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyNotes/Pods-MyNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C71BBA334F42E0B7B2D54CCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D00C5C2F2424614D004591F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B8AE05242602BE0056FE8E /* selectableText.swift in Sources */,
+				D0BC5C9324487E41002BB8E4 /* LottieView.swift in Sources */,
+				D0B8AE012425EF700056FE8E /* NoteDetailView.swift in Sources */,
+				D01C7F0B2424A1A600214DD2 /* RingView.swift in Sources */,
+				D0CA8445242E30F90063322D /* ToDosListView.swift in Sources */,
 				D00C5C372424614D004591F5 /* AppDelegate.swift in Sources */,
+				D0387FBD242A4B5700065BF9 /* NoteItemController.swift in Sources */,
 				D00C5C392424614D004591F5 /* SceneDelegate.swift in Sources */,
+				D0F8A189242C4CD800DDF48E /* NoteRowView.swift in Sources */,
+				D03BAB21244B003E00570087 /* ContentfulRegisterView.swift in Sources */,
+				D051DD79244600F7001FCEFB /* LoginView.swift in Sources */,
+				D051DD7B24460122001FCEFB /* RegisterView.swift in Sources */,
+				D01C7F0D2424A1B500214DD2 /* BlurView.swift in Sources */,
+				D0CA843F242E2E770063322D /* ToDoItem+Convenience.swift in Sources */,
+				D01C7F092424A15300214DD2 /* CardsView.swift in Sources */,
+				D0387FB8242A493900065BF9 /* NoteItem+CoreDataClass.swift in Sources */,
+				D01C7F142424F72D00214DD2 /* CourseList.swift in Sources */,
+				D0BFE137242F92B400B78034 /* TimerHomeView.swift in Sources */,
+				D051DD772446007B001FCEFB /* MincloudTools.swift in Sources */,
+				D0B8ADFD2425E5B80056FE8E /* NotesTextListView.swift in Sources */,
+				D0B8AE032425F0C60056FE8E /* NotesStore.swift in Sources */,
 				D00C5C3E2424614D004591F5 /* ContentView.swift in Sources */,
+				D0B8ADFB2425C7EA0056FE8E /* multiLineTextField.swift in Sources */,
+				D06E622B2446F45E0096CD97 /* ContentfulLoginView.swift in Sources */,
+				D0CA8441242E2EE60063322D /* ToDoItemController.swift in Sources */,
+				D0CA843C242E2DB20063322D /* ToDoItem+CoreDataClass.swift in Sources */,
+				D01C7EFD242466A300214DD2 /* TabBarView.swift in Sources */,
+				D0BFE139242F92DC00B78034 /* TimerController.swift in Sources */,
+				D02D2598242B957900F1CD81 /* NoteCardView.swift in Sources */,
+				D01C7F122424F3D500214DD2 /* NotesListView_old.swift in Sources */,
+				D0CA8443242E30390063322D /* ToDoRowView.swift in Sources */,
 				D00C5C3C2424614D004591F5 /* MyNotes.xcdatamodeld in Sources */,
+				D00794AD242F299C00D66ACE /* NoteEditView.swift in Sources */,
+				D051DD752445E5A2001FCEFB /* HomeView.swift in Sources */,
+				D0387FBB242A496B00065BF9 /* NoteItem+Convenience.swift in Sources */,
+				D0CA843D242E2DB20063322D /* ToDoItem+CoreDataProperties.swift in Sources */,
+				D0BC5C9924487E91002BB8E4 /* LottieTestView.swift in Sources */,
+				D0387FB9242A493900065BF9 /* NoteItem+CoreDataProperties.swift in Sources */,
+				D02D2596242B8E8000F1CD81 /* NotesCardListView.swift in Sources */,
+				D02D2594242B0EF400F1CD81 /* NoteAddView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +636,7 @@
 		};
 		D00C5C4B2424614E004591F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD736D6EEAF246B5A2959334 /* Pods-MyNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,7 +649,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.YES.MyNotes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YesNotes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +657,7 @@
 		};
 		D00C5C4C2424614E004591F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDFDA7107BCE1D1235B11581 /* Pods-MyNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,7 +670,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.YES.MyNotes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YesNotes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,6 +698,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0BC5C8E24487D2D002BB8E4 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0BC5C8F24487D2D002BB8E4 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0BC5C8E24487D2D002BB8E4 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D00C5C3A2424614D004591F5 /* MyNotes.xcdatamodeld */ = {

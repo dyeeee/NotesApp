@@ -9,8 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var newTodoItem = "good"
+    
+    @State var showTimer = false
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Hello, World!")
+            
+            
+            Button(action: {self.showTimer = true},
+               label: {Image(systemName: "timer")
+                .font(.largeTitle)})
+            .sheet(isPresented: $showTimer, content: {TimerHomeView()})
+            
+        }
+        //.navigationBarTitle("ContentView")
+        
+        
     }
 }
 
@@ -19,3 +35,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

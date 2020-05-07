@@ -56,7 +56,6 @@ class NoteItemController: ObservableObject {
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
         do {
-            //获取所有的Item到这里来
             NoteItemDataStore = try moc.fetch(fetchRequest)
              
         } catch {
@@ -67,7 +66,13 @@ class NoteItemController: ObservableObject {
     
     //创建后直接保存
     func createNoteItem(title: String, content: String) {
-        _ = NoteItem(title: title, content: content)
+        _ = NoteItem(createdAt: Date(), title: title, content: content)
+        saveToPersistentStore()
+    }
+    
+    //创建后直接保存
+    func createNoteItem(title: String, content: String, createdAt: Date) {
+        _ = NoteItem(createdAt: createdAt, title: title, content: content)
         saveToPersistentStore()
     }
     
@@ -84,7 +89,6 @@ class NoteItemController: ObservableObject {
     func deleteNoteItem(noteItemInstance: NoteItem) {
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         moc.delete(noteItemInstance)
-        print("here???")
         saveToPersistentStore()
     }
     
@@ -95,5 +99,12 @@ class NoteItemController: ObservableObject {
         let noteItemInstance = self.NoteItemDataStore[index]
         
         deleteNoteItem(noteItemInstance: noteItemInstance)
+    }
+    
+    //删除
+    func deleteAllNoteItem() {
+        for noteItem in self.NoteItemDataStore {
+            deleteNoteItem(noteItemInstance: noteItem)
+        }
     }
 }

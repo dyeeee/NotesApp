@@ -26,7 +26,7 @@ class ToDoItemController: ObservableObject {
         let fetchRequest: NSFetchRequest<ToDoItem> = ToDoItem.fetchRequest()
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do {
-            //获取所有的ToDoItem到这里来
+            //获取所有的ToDoItem
             ToDoItemDataStore = try moc.fetch(fetchRequest)
              
         } catch {
@@ -56,7 +56,6 @@ class ToDoItemController: ObservableObject {
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
         do {
-            //获取所有的ToDoItem到这里来
             ToDoItemDataStore = try moc.fetch(fetchRequest)
              
         } catch {
@@ -68,13 +67,13 @@ class ToDoItemController: ObservableObject {
     
     //创建,传参后直接保存
     func createToDoItem(content: String) {
-        _ = ToDoItem(content: content)
+        _ = ToDoItem(createdAt: Date(), content: content)
         saveToPersistentStore()
     }
     
     //创建,传参后直接保存
-    func createToDoItem(content: String, done:Bool) {
-        _ = ToDoItem(content: content, done: done)
+    func createToDoItem(content: String, done:Bool, createdAt: Date) {
+        _ = ToDoItem(createdAt:createdAt, content: content, done: done)
         saveToPersistentStore()
     }
     

@@ -16,15 +16,26 @@ struct ContentfulRegisterView: View {
     @Binding var show:Bool
     
     @State var isLoading = false
+    @State private var isShowingAlert = false
     
     func register(){
-        self.tool.userregister(name: self.username, pass: self.pass)
         self.isLoading = true
+        self.tool.userregister(name: self.username, pass: self.pass)
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
-            self.isLoading = false
-            self.show.toggle()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+            if registeResult{
+                print(registeResult)
+                print("注册界面的成功")
+                self.isLoading = false
+                self.show.toggle()
+            }else{
+                print("注册界面的失败")
+                self.isLoading = false
+                self.isShowingAlert=true
+            }
         }
+        
+        
     }
     
     var body: some View {
@@ -36,7 +47,7 @@ struct ContentfulRegisterView: View {
                 .edgesIgnoringSafeArea(.bottom)
             
             VStack(spacing:20) {
-                Text("Register \n StartRight Now")
+                Text("Registe \n Start Right Now")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -46,18 +57,18 @@ struct ContentfulRegisterView: View {
                 VStack {
                     HStack {
                         TextField("Input your username", text: ($username))
-                            .font(.title)
+                            .font(.system(size: 24))
                             .padding(.leading)
                         Spacer()
                     }
-
+                    
                     Divider()
                         .padding(.leading, 20)
                         .padding(.trailing, 20)
                     HStack {
                         
                         TextField("Input your passward", text: ($pass))
-                            .font(.title)
+                            .font(.system(size: 24))
                             .padding(.leading)
                         Spacer()
                     }
@@ -72,16 +83,20 @@ struct ContentfulRegisterView: View {
                 
                 HStack {
                     Button(action: {
-                        self.register()
+                        if !self.username.isEmpty && !self.pass.isEmpty {
+                            self.register()
+                        }else {
+                            self.isShowingAlert = true
+                        }
                     }) {
-                        Text("Register".uppercased())
+                        Text("Registe".uppercased())
                             .foregroundColor(.white)
                             .fontWeight(.bold)
                     }
                     .padding(12)
                     .frame(width: 160)
                         
-                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                    .background(Color(.systemGreen))
                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                     .shadow(color: Color(#colorLiteral(red: 0.1647058824, green: 0.1882352941, blue: 0.3882352941, alpha: 1)).opacity(0.2), radius: 20, x: 0, y: 20)
                     
@@ -100,12 +115,14 @@ struct ContentfulRegisterView: View {
                     .offset(y:-75)
                 
             }.frame(maxWidth:screen.width)
-                .background(Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)))
+                .background(Color("RegisterColor"))
                 .edgesIgnoringSafeArea(.bottom)
             
             if isLoading {
-                LottieTestView()
+                LottieUserLoadingView()
             }
+        }            .alert(isPresented: $isShowingAlert) {
+            Alert(title: Text("Registe Failed"), message: Text("Check Your Username and Password"), dismissButton: .default(Text("OK")))
         }
         
         

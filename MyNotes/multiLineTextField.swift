@@ -31,14 +31,14 @@ struct multiLineTextField : UIViewRepresentable {
             textview.textColor = .gray
         }
         else{
-            textview.textColor = .black
+            textview.textColor = UIColor(named: "TextColor")
         }
         //textView透明背景
         //textview.backgroundColor = .clear
         
         textview.isUserInteractionEnabled = true
         textview.isEditable = editable
-        textview.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
+        textview.backgroundColor = UIColor(named: "RowAnyColor")
         
         return textview
     }
@@ -56,7 +56,7 @@ struct multiLineTextField : UIViewRepresentable {
         func textViewDidBeginEditing(_ textView: UITextView) {
 
                    //textView.text = ""
-                   textView.textColor = .black
+                   textView.textColor = UIColor(named: "TextColor")
                }
         
         func textViewDidChange(_ textView: UITextView) {

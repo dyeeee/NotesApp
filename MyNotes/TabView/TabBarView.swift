@@ -50,11 +50,11 @@ struct TabBarView: View {
             }
             .tag(4)
             
-            NotesCardListView()
+            NewsListView()
             .tabItem {
                 VStack {
                     Image(systemName: "cube.box")
-                    Text("Link")
+                    Text("Subscribe")
                 }
             }
             .tag(5)

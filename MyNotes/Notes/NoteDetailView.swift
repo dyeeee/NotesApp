@@ -50,15 +50,16 @@ struct NoteDetailView: View {
                         self.showEditView = true
                     }) {
                         Image(systemName: "pencil.and.ellipsis.rectangle")
-                            .renderingMode(.original)
+                            .foregroundColor(Color("TextColor"))
                             .font(.system(size: 25, weight: .medium))
                             .frame(width:40, height: 40)
-                            .foregroundColor(.blue)
+                        
                     }
+                        
                     .sheet(isPresented: $showEditView) {
                         NoteEditView(noteItemController: self.noteItemController, noteItem: self.noteItem, content: self.$content)}
                 }.padding(.leading,5)
-                .padding(.trailing,5)
+                    .padding(.trailing,5)
                 VStack(spacing:1) {
                     multiLineTextField(text: $content,editable: false)
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
@@ -78,6 +79,6 @@ struct NoteDetailView: View {
 
 struct NoteDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteDetailView(noteItemController: NoteItemController(), noteItem: NoteItem(title: "DetailViewTest TITLE", content: "DetailViewTest This is content"))
+        NoteDetailView(noteItemController: NoteItemController(), noteItem: NoteItem(createdAt: Date(), title: "DetailViewTest TITLE", content: "DetailViewTest This is content"))
     }
 }

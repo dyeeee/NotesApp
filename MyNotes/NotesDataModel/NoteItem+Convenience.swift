@@ -12,7 +12,7 @@ import CoreData
 
 extension NoteItem {
 //取消如果不使用返回值的警告
-    @discardableResult convenience init(id: UUID = UUID(), title: String, createdAt: Date = Date(), content: String, modifiedAt: Date = Date(), showFullView: Bool = false,context: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext) {
+    @discardableResult convenience init(id: UUID = UUID(), createdAt: Date,title: String, content: String, modifiedAt: Date = Date(), showFullView: Bool = false,context: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext) {
 
        self.init(context: context)
 

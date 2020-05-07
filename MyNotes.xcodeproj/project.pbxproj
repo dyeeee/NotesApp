@@ -35,6 +35,20 @@
 		D051DD79244600F7001FCEFB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051DD78244600F7001FCEFB /* LoginView.swift */; };
 		D051DD7B24460122001FCEFB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051DD7A24460122001FCEFB /* RegisterView.swift */; };
 		D06E622B2446F45E0096CD97 /* ContentfulLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E622A2446F45E0096CD97 /* ContentfulLoginView.swift */; };
+		D0706668244C847900035390 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0706667244C847900035390 /* NewsController.swift */; };
+		D0815214244EF356002EF17C /* LottieUserLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0815213244EF356002EF17C /* LottieUserLoadingView.swift */; };
+		D0815216244EF5C9002EF17C /* done.json in Resources */ = {isa = PBXBuildFile; fileRef = D0815215244EF5C9002EF17C /* done.json */; };
+		D0815218244EF5D3002EF17C /* LottieToDoDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0815217244EF5D3002EF17C /* LottieToDoDoneView.swift */; };
+		D081521A244EFEC3002EF17C /* download.json in Resources */ = {isa = PBXBuildFile; fileRef = D0815219244EFEC2002EF17C /* download.json */; };
+		D081521E244F0341002EF17C /* sync.json in Resources */ = {isa = PBXBuildFile; fileRef = D081521D244F0341002EF17C /* sync.json */; };
+		D0815220244F034D002EF17C /* LottieSyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081521F244F034D002EF17C /* LottieSyncView.swift */; };
+		D0838383245051B800C28626 /* NotesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0838382245051B800C28626 /* NotesSearchView.swift */; };
+		D08383852450682600C28626 /* NoteSearchResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08383842450682600C28626 /* NoteSearchResultRowView.swift */; };
+		D083838724507D4800C28626 /* LaunchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083838624507D4800C28626 /* LaunchTest.swift */; };
+		D08C7166244D93E800ADC097 /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C7165244D93E800ADC097 /* NewsRowView.swift */; };
+		D08C7168244D98AC00ADC097 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C7167244D98AC00ADC097 /* NewsListView.swift */; };
+		D08C716A244DCD7E00ADC097 /* ToDosSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C7169244DCD7E00ADC097 /* ToDosSearchView.swift */; };
+		D08C716C244DCEC600ADC097 /* ToDosSearchResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C716B244DCEC600ADC097 /* ToDosSearchResultRowView.swift */; };
 		D0B8ADFB2425C7EA0056FE8E /* multiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8ADFA2425C7EA0056FE8E /* multiLineTextField.swift */; };
 		D0B8ADFD2425E5B80056FE8E /* NotesTextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8ADFC2425E5B80056FE8E /* NotesTextListView.swift */; };
 		D0B8AE012425EF700056FE8E /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8AE002425EF700056FE8E /* NoteDetailView.swift */; };
@@ -89,6 +103,20 @@
 		D051DD78244600F7001FCEFB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D051DD7A24460122001FCEFB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D06E622A2446F45E0096CD97 /* ContentfulLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulLoginView.swift; sourceTree = "<group>"; };
+		D0706667244C847900035390 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		D0815213244EF356002EF17C /* LottieUserLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieUserLoadingView.swift; sourceTree = "<group>"; };
+		D0815215244EF5C9002EF17C /* done.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done.json; sourceTree = "<group>"; };
+		D0815217244EF5D3002EF17C /* LottieToDoDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieToDoDoneView.swift; sourceTree = "<group>"; };
+		D0815219244EFEC2002EF17C /* download.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = download.json; sourceTree = "<group>"; };
+		D081521D244F0341002EF17C /* sync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sync.json; sourceTree = "<group>"; };
+		D081521F244F034D002EF17C /* LottieSyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieSyncView.swift; sourceTree = "<group>"; };
+		D0838382245051B800C28626 /* NotesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesSearchView.swift; sourceTree = "<group>"; };
+		D08383842450682600C28626 /* NoteSearchResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSearchResultRowView.swift; sourceTree = "<group>"; };
+		D083838624507D4800C28626 /* LaunchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTest.swift; sourceTree = "<group>"; };
+		D08C7165244D93E800ADC097 /* NewsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
+		D08C7167244D98AC00ADC097 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		D08C7169244DCD7E00ADC097 /* ToDosSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosSearchView.swift; sourceTree = "<group>"; };
+		D08C716B244DCEC600ADC097 /* ToDosSearchResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosSearchResultRowView.swift; sourceTree = "<group>"; };
 		D0B8ADFA2425C7EA0056FE8E /* multiLineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = multiLineTextField.swift; sourceTree = "<group>"; };
 		D0B8ADFC2425E5B80056FE8E /* NotesTextListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTextListView.swift; sourceTree = "<group>"; };
 		D0B8AE002425EF700056FE8E /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
@@ -167,8 +195,8 @@
 				D0CA8439242E2B750063322D /* ToDosDataModel */,
 				D01C7F0E2424F0D300214DD2 /* Notes */,
 				D0FD33B42427301E007F175E /* NotesDataModel */,
-				D0BFE135242F92A100B78034 /* Timer */,
 				D0706666244C7D5700035390 /* News */,
+				D0BFE135242F92A100B78034 /* Timer */,
 				D0B8AE06242645940056FE8E /* DataModel */,
 				D00C5C3F2424614E004591F5 /* Assets.xcassets */,
 				D00C5C442424614E004591F5 /* LaunchScreen.storyboard */,
@@ -208,6 +236,8 @@
 			children = (
 				D0CA8444242E30F90063322D /* ToDosListView.swift */,
 				D0CA8442242E30390063322D /* ToDoRowView.swift */,
+				D08C7169244DCD7E00ADC097 /* ToDosSearchView.swift */,
+				D08C716B244DCEC600ADC097 /* ToDosSearchResultRowView.swift */,
 			);
 			path = ToDos;
 			sourceTree = "<group>";
@@ -216,9 +246,11 @@
 			isa = PBXGroup;
 			children = (
 				D01C7F0C2424A1B500214DD2 /* BlurView.swift */,
-				D01C7F0A2424A1A600214DD2 /* RingView.swift */,
+				D0B8AE022425F0C60056FE8E /* NotesStore.swift */,
 				D01C7F082424A15300214DD2 /* CardsView.swift */,
 				D01C7F132424F72D00214DD2 /* CourseList.swift */,
+				D01C7F112424F3D500214DD2 /* NotesListView_old.swift */,
+				D083838624507D4800C28626 /* LaunchTest.swift */,
 			);
 			path = TestPages;
 			sourceTree = "<group>";
@@ -233,8 +265,8 @@
 				D00794AC242F299C00D66ACE /* NoteEditView.swift */,
 				D02D2595242B8E8000F1CD81 /* NotesCardListView.swift */,
 				D02D2597242B957900F1CD81 /* NoteCardView.swift */,
-				D0B8AE022425F0C60056FE8E /* NotesStore.swift */,
-				D01C7F112424F3D500214DD2 /* NotesListView_old.swift */,
+				D0838382245051B800C28626 /* NotesSearchView.swift */,
+				D08383842450682600C28626 /* NoteSearchResultRowView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -255,6 +287,9 @@
 		D0706666244C7D5700035390 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				D0706667244C847900035390 /* NewsController.swift */,
+				D08C7167244D98AC00ADC097 /* NewsListView.swift */,
+				D08C7165244D93E800ADC097 /* NewsRowView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -274,8 +309,15 @@
 				D0BC5C9424487E7A002BB8E4 /* success.json */,
 				D0BC5C9C24488875002BB8E4 /* card-loading.json */,
 				D0BC5C9A24488782002BB8E4 /* bots-channel.json */,
-				D0BC5C9224487E41002BB8E4 /* LottieView.swift */,
+				D0815215244EF5C9002EF17C /* done.json */,
+				D0815219244EFEC2002EF17C /* download.json */,
+				D081521D244F0341002EF17C /* sync.json */,
+				D01C7F0A2424A1A600214DD2 /* RingView.swift */,
 				D0BC5C9824487E91002BB8E4 /* LottieTestView.swift */,
+				D0815213244EF356002EF17C /* LottieUserLoadingView.swift */,
+				D0815217244EF5D3002EF17C /* LottieToDoDoneView.swift */,
+				D081521F244F034D002EF17C /* LottieSyncView.swift */,
+				D0BC5C9224487E41002BB8E4 /* LottieView.swift */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -387,13 +429,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D081521E244F0341002EF17C /* sync.json in Resources */,
 				D00C5C462424614E004591F5 /* LaunchScreen.storyboard in Resources */,
 				D0BC5C9B24488783002BB8E4 /* bots-channel.json in Resources */,
 				D0BC5C9624487E7A002BB8E4 /* success.json in Resources */,
 				D00C5C432424614E004591F5 /* Preview Assets.xcassets in Resources */,
 				D00C5C402424614E004591F5 /* Assets.xcassets in Resources */,
+				D081521A244EFEC3002EF17C /* download.json in Resources */,
 				D0BC5C9D24488875002BB8E4 /* card-loading.json in Resources */,
 				D0BC5C9724487E7A002BB8E4 /* loading.json in Resources */,
+				D0815216244EF5C9002EF17C /* done.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,38 +509,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B8AE05242602BE0056FE8E /* selectableText.swift in Sources */,
+				D0815220244F034D002EF17C /* LottieSyncView.swift in Sources */,
 				D0BC5C9324487E41002BB8E4 /* LottieView.swift in Sources */,
 				D0B8AE012425EF700056FE8E /* NoteDetailView.swift in Sources */,
 				D01C7F0B2424A1A600214DD2 /* RingView.swift in Sources */,
 				D0CA8445242E30F90063322D /* ToDosListView.swift in Sources */,
+				D08C7168244D98AC00ADC097 /* NewsListView.swift in Sources */,
 				D00C5C372424614D004591F5 /* AppDelegate.swift in Sources */,
 				D0387FBD242A4B5700065BF9 /* NoteItemController.swift in Sources */,
+				D0706668244C847900035390 /* NewsController.swift in Sources */,
 				D00C5C392424614D004591F5 /* SceneDelegate.swift in Sources */,
 				D0F8A189242C4CD800DDF48E /* NoteRowView.swift in Sources */,
 				D03BAB21244B003E00570087 /* ContentfulRegisterView.swift in Sources */,
 				D051DD79244600F7001FCEFB /* LoginView.swift in Sources */,
 				D051DD7B24460122001FCEFB /* RegisterView.swift in Sources */,
+				D08C716A244DCD7E00ADC097 /* ToDosSearchView.swift in Sources */,
 				D01C7F0D2424A1B500214DD2 /* BlurView.swift in Sources */,
 				D0CA843F242E2E770063322D /* ToDoItem+Convenience.swift in Sources */,
 				D01C7F092424A15300214DD2 /* CardsView.swift in Sources */,
 				D0387FB8242A493900065BF9 /* NoteItem+CoreDataClass.swift in Sources */,
 				D01C7F142424F72D00214DD2 /* CourseList.swift in Sources */,
+				D0815218244EF5D3002EF17C /* LottieToDoDoneView.swift in Sources */,
 				D0BFE137242F92B400B78034 /* TimerHomeView.swift in Sources */,
+				D08C7166244D93E800ADC097 /* NewsRowView.swift in Sources */,
 				D051DD772446007B001FCEFB /* MincloudTools.swift in Sources */,
 				D0B8ADFD2425E5B80056FE8E /* NotesTextListView.swift in Sources */,
 				D0B8AE032425F0C60056FE8E /* NotesStore.swift in Sources */,
 				D00C5C3E2424614D004591F5 /* ContentView.swift in Sources */,
 				D0B8ADFB2425C7EA0056FE8E /* multiLineTextField.swift in Sources */,
+				D08C716C244DCEC600ADC097 /* ToDosSearchResultRowView.swift in Sources */,
+				D0838383245051B800C28626 /* NotesSearchView.swift in Sources */,
 				D06E622B2446F45E0096CD97 /* ContentfulLoginView.swift in Sources */,
 				D0CA8441242E2EE60063322D /* ToDoItemController.swift in Sources */,
 				D0CA843C242E2DB20063322D /* ToDoItem+CoreDataClass.swift in Sources */,
 				D01C7EFD242466A300214DD2 /* TabBarView.swift in Sources */,
 				D0BFE139242F92DC00B78034 /* TimerController.swift in Sources */,
+				D0815214244EF356002EF17C /* LottieUserLoadingView.swift in Sources */,
 				D02D2598242B957900F1CD81 /* NoteCardView.swift in Sources */,
 				D01C7F122424F3D500214DD2 /* NotesListView_old.swift in Sources */,
 				D0CA8443242E30390063322D /* ToDoRowView.swift in Sources */,
 				D00C5C3C2424614D004591F5 /* MyNotes.xcdatamodeld in Sources */,
 				D00794AD242F299C00D66ACE /* NoteEditView.swift in Sources */,
+				D08383852450682600C28626 /* NoteSearchResultRowView.swift in Sources */,
 				D051DD752445E5A2001FCEFB /* HomeView.swift in Sources */,
 				D0387FBB242A496B00065BF9 /* NoteItem+Convenience.swift in Sources */,
 				D0CA843D242E2DB20063322D /* ToDoItem+CoreDataProperties.swift in Sources */,
@@ -503,6 +558,7 @@
 				D0387FB9242A493900065BF9 /* NoteItem+CoreDataProperties.swift in Sources */,
 				D02D2596242B8E8000F1CD81 /* NotesCardListView.swift in Sources */,
 				D02D2594242B0EF400F1CD81 /* NoteAddView.swift in Sources */,
+				D083838724507D4800C28626 /* LaunchTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -584,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

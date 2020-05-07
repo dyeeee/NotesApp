@@ -21,7 +21,7 @@ struct TimerHomeView: View {
     
     @State var selectedPickerIndex = 0
     
-    let availableMinutes = [1,5,10,15,20]
+    let availableMinutes = [1,5,10,15,20,25,30,35,40,45,50,55,60]
     
     var timeCount = 0
     @State var showDoneAlert = false
@@ -38,19 +38,19 @@ struct TimerHomeView: View {
                     Text("Focus Timer")
                         .font(.system(size: 40))
                         .padding(.top, 20)
-                        .foregroundColor(runningTimer ? Color(.white):Color(.black))
+                        .foregroundColor(runningTimer ? Color(.white):Color("TextColor"))
                     
-                    Text("今天已经专注了\(timerController.timeCount / 60)分钟")
-                                       .font(.system(size: 20))
-                                       .foregroundColor(runningTimer ? Color(.white):Color(.black))
+                    //                    Text("今天已经专注了\(timerController.dailyTimeCount / 60)分钟")
+                    //                                       .font(.system(size: 20))
+                    //                                       .foregroundColor(runningTimer ? Color(.white):Color(.black))
                 }
                 
-//
+                //
                 Text(secondsToMinutesAndSeconds(seconds: timerController.secondsLeft))
                     .font(.system(size: 50))
                     .padding(.top, 10)
-                    .foregroundColor(runningTimer ? Color(.white):Color(.black))
-                .animation(.none)
+                    .foregroundColor(runningTimer ? Color(.white):Color("TextColor"))
+                    .animation(.none)
                 
                 if timerController.timerMode != .done{
                     Image(systemName: timerController.timerMode == .running ? "pause.circle.fill" : "play.circle.fill")
@@ -89,6 +89,7 @@ struct TimerHomeView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50, height: 50)
                         .padding(.top, 40)
+                        .foregroundColor(Color("TextColor"))
                         .onTapGesture(perform: {
                             self.timerController.reset()
                         })
@@ -100,25 +101,25 @@ struct TimerHomeView: View {
                         }
                     }
                     .labelsHidden()
-                .offset(x: 0, y: -60)
+                    .offset(x: 0, y: -60)
                 }
                 
                 if timerController.timerMode == .running {
-                    Text("认真完成待办事项吧")
-                    .font(.system(size: 30))
-                    .padding(.top, 20)
-                    .foregroundColor(Color(.white))
+                    Text("Keep Doing Your ToDos")
+                        .font(.system(size: 30))
+                        .padding(.top, 20)
+                        .foregroundColor(runningTimer ? Color(.white):Color("TextColor"))
                 }
                 
                 
                 Spacer()
             }
             .alert(isPresented: $showDoneAlert) {
-                Alert(title: Text("完成啦"), message: Text("今天已经专注了\(timerController.timeCount / 60)分钟"), dismissButton: .default(Text("OK!")))}
+                Alert(title: Text("Good job!"), message: Text("Focused \(timerController.dailyTimeCount / 60) min today"), dismissButton: .default(Text("OK!")))}
         }
         .padding(.top,40)
         .frame(maxWidth: .infinity)
-        .background(runningTimer ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)):Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+        .background(runningTimer ? Color(.systemGreen):Color(.systemGray5))
         .edgesIgnoringSafeArea(.all)
         .animation(.timingCurve(0.7, 1, 0.3, 1, duration: 1))
     }

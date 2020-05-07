@@ -10,7 +10,6 @@ import SwiftUI
 
 struct NoteAddView: View {
     @ObservedObject var noteItemController: NoteItemController
-    
     @State private var title = ""
     @State private var content = "Write something?"
     @State private var isShowingAlert = false
@@ -28,9 +27,9 @@ struct NoteAddView: View {
                         Spacer()
                     }
                     TextField("Note title", text: ($title))
-                    .padding(10)
-                        .background(Color(red: 240/255, green: 240/255, blue: 240/255))
-                    .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+                        .padding(10)
+                        .background(Color(.systemGray5))
+                        .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
                 }
                 VStack(spacing:1) {
                     HStack {
@@ -40,7 +39,7 @@ struct NoteAddView: View {
                     }
                     
                     multiLineTextField(text: $content)
-                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 }
                 Spacer()
                 
@@ -48,7 +47,7 @@ struct NoteAddView: View {
                     //非空则保存
                     if !self.title.isEmpty && !self.content.isEmpty{
                         self.noteItemController.createNoteItem(title: self.title, content: self.content)
-                        //重置
+                        //重置绑定
                         self.title = ""
                         self.content = ""
                         //?
@@ -60,17 +59,17 @@ struct NoteAddView: View {
                     Text("Add Note")
                         .foregroundColor(.white)
                         .font(.system(size: 20))
-                    .frame(width: 300, height: 50, alignment: .center)
+                        .frame(width: 300, height: 50, alignment: .center)
                 }
-            .padding()
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .background(Color(.blue))
-                    .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
-                    .shadow(color: Color(.blue).opacity(0.3), radius: 5, x: 0, y: 5)
+                .padding()
+                .frame(width: 300, height: 50, alignment: .center)
+                .background(Color(.blue))
+                .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+                .shadow(color: Color(.blue).opacity(0.3), radius: 5, x: 0, y: 5)
             }.padding()
-            .navigationBarTitle("Add a Note", displayMode: .automatic)
-            .alert(isPresented: $isShowingAlert) {
-            Alert(title: Text("Warning"), message: Text("好像还没写完"), dismissButton: .default(Text("知道了")))
+                .navigationBarTitle("Add a Note", displayMode: .automatic)
+                .alert(isPresented: $isShowingAlert) {
+                    Alert(title: Text("Warning"), message: Text("No Content"), dismissButton: .default(Text("OK")))
             }
         }
     }

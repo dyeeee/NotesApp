@@ -12,7 +12,7 @@ import CoreData
 
 extension ToDoItem {
 //取消如果不使用返回值的警告
-    @discardableResult convenience init(id: UUID = UUID(), createdAt: Date = Date(), content: String, done: Bool = false, context: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext) {
+    @discardableResult convenience init(id: UUID = UUID(), createdAt: Date, content: String, done: Bool = false, context: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext) {
 
        self.init(context: context)
 

@@ -12,7 +12,7 @@ import UIKit
 
 struct NoteCardView: View {
     
-    @ObservedObject var noteItemController: NoteItemController
+    var noteItemController: NoteItemController
     @State var noteItem: NoteItem
     
     @Binding var showFullView: Bool
@@ -31,12 +31,21 @@ struct NoteCardView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    var timeFormatter: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yy-MM-dd, HH:mm"
+        let dateString = formatter.string(from: noteItem.createdAt ?? Date())
+        
+        let returnString = "\(dateString)"
+        return returnString
+    }
+    
     var body: some View {
         ZStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 10.0) {
                 HStack{
                     Text("Content")
-                        .font(.title).bold()
+                        .font(.system(size: 24, weight: .bold))
                     Spacer()
                 }
                 HStack {
@@ -49,9 +58,9 @@ struct NoteCardView: View {
             .offset(y : showFullView ? 240 : 0)
                 //不showFullView的时候文本藏在上面的VStack下
                 .frame(maxWidth: showFullView ? .infinity : screen.width - 60, maxHeight: showFullView ? .infinity : 200, alignment: .top)
-                .background(Color.white)
+                .background(Color("RowAnyColor"))
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+                .shadow(color: Color("ShadowColor"), radius: 20, x: 0, y: 20)
                 .opacity(showFullView ? 1 : 0)
             VStack {
                 HStack(alignment: .top) {
@@ -59,26 +68,29 @@ struct NoteCardView: View {
                         Text(noteItem.title ?? "no title")
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(Color.white)
+                            .offset(x: 0, y: showFullView ? 20 : 0)
+                            
                         
-                        Text(noteItem.content ?? "no title")
-                        .foregroundColor(Color.white)
+                        Text(showFullView ? timeFormatter : noteItem.content ?? "no content")
+                            .offset(x: 0, y: showFullView ? 20 : 0)
+                            .foregroundColor(Color.white)
                         
                     }
                     Spacer()
                     
-                    ZStack {
-                        HStack {
-                            VStack {
-                                Image(systemName: "xmark")
-                                    .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(.white)
-                            }
-                            .frame(width: 36, height: 36)
-                            .background(Color.black)
-                            .clipShape(Circle())
-                            .opacity(showFullView ? 1 : 0)
-                        }
-                    }
+//                    ZStack {
+//                        HStack {
+//                            VStack {
+//                                Image(systemName: "xmark")
+//                                    .font(.system(size: 16, weight: .medium))
+//                                    .foregroundColor(.white)
+//                            }
+//                            .frame(width: 36, height: 36)
+//                            .background(Color.black)
+//                            .clipShape(Circle())
+//                            .opacity(showFullView ? 1 : 0)
+//                        }
+//                    }
                 }
                 Spacer()
             }
@@ -94,7 +106,7 @@ struct NoteCardView: View {
                     DragGesture()
                         .onChanged{
                             value in
-                            guard value.translation.height < 100 else{ return }
+                            guard value.translation.height < 150 else{ return }
                             guard value.translation.height > 0 else{ return }
                             self.activeView = value.translation
                     }
@@ -133,7 +145,7 @@ struct NoteCardView: View {
                 DragGesture()
                     .onChanged{
                         value in
-                        guard value.translation.height < 100 else{ return }
+                        guard value.translation.height < 150 else{ return }
                         guard value.translation.height > 0 else{ return }
                         self.activeView = value.translation
                 }

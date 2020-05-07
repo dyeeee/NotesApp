@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //判断是否第一次启动（两个都是第一次则以这个为准）
+        if UserDefaults.isFirstLaunch() {
+            print("应用第一次启动")
+        }
+        
+        
+        if isNewDay(){
+            UserDefaults.standard.set(0,forKey: "dailyTimeCount")
+        }
         BaaS.register(clientID: "a841b7c7edd38152e535")
         return true
     }

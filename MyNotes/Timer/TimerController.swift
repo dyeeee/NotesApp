@@ -9,6 +9,30 @@
 import Foundation
 import SwiftUI
 
+func isNewDay() -> Bool{
+    var timeFormatter: String {
+        //获取当日的年月日
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yy-MM-dd"
+        let dateString = dateFormatter.string(from: Date())
+        
+        return dateString
+    }
+    
+    
+    let lastLoginDate = UserDefaults.standard.string(forKey: "lastLoginDate")
+    UserDefaults.standard.set(timeFormatter, forKey: "lastLoginDate")
+    
+    if lastLoginDate ==  timeFormatter {
+        print(lastLoginDate!)
+        return false
+    }else{
+        return true
+    }
+    
+}
+
+
 class TimerController: ObservableObject {
     
     @Published var timerMode: TimerMode = .initial
@@ -16,10 +40,13 @@ class TimerController: ObservableObject {
     
     @State var showDoneAlert = false
     
-    var timeCount = UserDefaults.standard.integer(forKey: "timeCount_test")
-    var currentLength = 0
     
+    var currentLength = 0
     var timer = Timer()
+    
+    var timeCount = UserDefaults.standard.integer(forKey: "timeCount_test")
+    var dailyTimeCount = UserDefaults.standard.integer(forKey: "dailyTimeCount")
+    
     
     
     func start() {
@@ -46,11 +73,17 @@ class TimerController: ObservableObject {
     
     func done(){
         self.timerMode = .done
+        self.dailyTimeCount += self.currentLength
+        UserDefaults.standard.set(self.dailyTimeCount, forKey: "dailyTimeCount")
+        self.dailyTimeCount = UserDefaults.standard.integer(forKey: "dailyTimeCount")
+        
         self.timeCount += self.currentLength
         UserDefaults.standard.set(self.timeCount, forKey: "timeCount_test")
         self.timeCount = UserDefaults.standard.integer(forKey: "timeCount_test")
         
-        print(self.timeCount)
+        
+        
+        //print(self.timeCount)
     }
     
     func setTimerLength(minutes: Int) {
@@ -76,6 +109,6 @@ func secondsToMinutesAndSeconds (seconds : Int) -> String {
     let seconds = "\((seconds % 3600) % 60)"
     let minuteStamp = minutes.count > 1 ? minutes : "0" + minutes
     let secondStamp = seconds.count > 1 ? seconds : "0" + seconds
-
+    
     return "\(minuteStamp):\(secondStamp)"
 }

@@ -15,7 +15,8 @@ struct NotesCardListView: View {
     @State var activeIndex = -1
     @State var activeView = CGSize.zero
     
-    @State var addNote = false
+    @State var showAddView = false
+    @State var showSearch = false
     
     //借助控制器获取数据库
     @ObservedObject var noteItemController = noteItemControllerGlobal
@@ -32,26 +33,34 @@ struct NotesCardListView: View {
                 .animation(.linear)
                 .edgesIgnoringSafeArea(.all)
             
-            ScrollView {
-                VStack(spacing: 20) {
+            ScrollView(showsIndicators:false) {
+                VStack(spacing: 10) {
                     HStack {
-                        Text("NoteCard List")
+                        Text("NoteCards")
                             .font(.largeTitle)
                             .bold()
-                            .offset(y: 15)
+                            .offset(x: -4, y: 18)
                         Spacer()
                         
-                        Button(action:{
-                            self.addNote.toggle()}) {
-                                Image(systemName: "square.and.pencil")
-                                    .foregroundColor(.blue)
-                                    .font(.largeTitle)
-                                    .frame(width:45, height: 45)
-                                    .background(Color.white)
-                                    //.shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
-                                    .offset(x: 20, y: -31)
-                        }
-                        .sheet(isPresented: $addNote, content:{NoteAddView(noteItemController: self.noteItemController)})
+//                        Button(action:{
+//                            self.addNote.toggle()}) {
+//                                Image(systemName: "square.and.pencil")
+//                                    .foregroundColor(.blue)
+//                                    .font(.largeTitle)
+//                                    .offset(x: 14, y: -28)
+//                        }
+//                        .sheet(isPresented: $addNote, content:{NoteAddView(noteItemController: self.noteItemController)})
+                        
+                        HStack(spacing:10){
+                            Button(action:{self.showSearch = true},
+                                   label:{Image(systemName: "doc.text.magnifyingglass").scaleEffect(0.9)
+                                    .font(.largeTitle)}).sheet(isPresented: $showSearch, content: {NotesSearchView()})
+                            Button(action: {self.showAddView = true},
+                                   label: {Image(systemName: "square.and.pencil")
+                                .font(.largeTitle)}).offset(x: 0, y: -6)
+                                .sheet(isPresented: $showAddView, content: {NoteAddView(noteItemController: self.noteItemController)})
+                        }.offset(x: 14, y: -28.3)
+                        
                     }.blur(radius: active ? 30 : 0)//卡片激活时，标题模糊
                         .padding(.top,30)
                         .padding(.leading,20)
@@ -89,6 +98,7 @@ struct NotesCardListView: View {
 //                    self.noteItemController.
 //                    self.presentationMode.wrappedValue.dismiss()
 //               }
+                
             }
         }
     }
@@ -96,7 +106,10 @@ struct NotesCardListView: View {
 
 struct NotesCardListView_Previews: PreviewProvider {
     static var previews: some View {
-        NotesCardListView()
+        Group{
+            NotesCardListView()
+            NotesTextListView()
+        }
     }
 }
 

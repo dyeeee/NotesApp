@@ -10,7 +10,7 @@ import SwiftUI
 import Lottie
 
 struct LottieView: UIViewRepresentable {
-    var filename = "loading"
+    var filename = ""
     
     func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         let view = UIView(frame: .zero)

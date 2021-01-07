@@ -6,7 +6,7 @@
 
 完全由swiftUI编写，基于CoreData实现本地持久化存储
 
-实现内容列表：
+### 实现内容列表：
 
 * 待办事项
 * 笔记本
@@ -16,6 +16,8 @@
 * 夜间模式
 * lottie动效
 * 专注计时
+
+### App截图
 
 <div align=center>
 <img src="https://github.com/dyeeee/NotesApp/blob/master/showPics/BA9D268CD0E878BF5790F646B301DB97.JPG" width="240"/>

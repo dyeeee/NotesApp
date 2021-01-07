@@ -10,6 +10,11 @@
 * 夜间模式
 * lottie动效
 
-<div align=center><img src="https://github.com/dyeeee/NotesApp/blob/master/BA9D268CD0E878BF5790F646B301DB97.JPG" width="280" />
-<img src="https://github.com/dyeeee/NotesApp/blob/master/A17817B53082F53ED584960716FE6053.JPG" width="280"/><img src="https://github.com/dyeeee/NotesApp/blob/master/D81B53D18A82834A70E4CDCB80B66CC2.JPG" width="280"/></div>
+<div align=center>
+<img src="https://github.com/dyeeee/NotesApp/blob/master/BA9D268CD0E878BF5790F646B301DB97.JPG" width="280" />
+<img src="https://github.com/dyeeee/NotesApp/blob/master/A17817B53082F53ED584960716FE6053.JPG" width="280"/>
+<img src="https://github.com/dyeeee/NotesApp/blob/master/D81B53D18A82834A70E4CDCB80B66CC2.JPG" width="280"/>
+<img src="https://github.com/dyeeee/NotesApp/blob/master/D81B53D18A82834A70E4CDCB80B66CC2.JPG" width="280"/>
+  
+</div>
 

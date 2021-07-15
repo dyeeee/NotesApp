@@ -11,7 +11,7 @@
 * 待办事项
 * 笔记本
 * CoreData本地持久化存储
-* MinCloud登陆注册（知晓云Baas）
+* MinCloud登录注册（知晓云Baas）
 * MinCloud数据云同步（知晓云Baas）
 * 夜间模式
 * lottie动效
